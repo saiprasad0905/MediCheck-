@@ -1,0 +1,43 @@
+symptom_checker_chatbot/
+│
+│── backend/
+│   │── main.py                   # Entry point with FastAPI app
+│   │── routes/
+│   │   └── chat.py               # Chat API (POST /chat)
+│   │── services/
+│   │   ├── nlp.py                # Preprocessing / embeddings
+│   │   ├── matcher.py            # Symptom → disease matching logic
+│   │   ├── triage.py             # Red-flag & risk logic
+│   │   └── model_loader.py        # Load SVM & RNN models
+│   │── models/
+│   │   ├── svm_intent.pkl
+│   │   ├── rnn_symptom.pt
+│   │   └── vectorizer.pkl
+│   │── utils/
+│   │   └── helpers.py
+│   └── __init__.py
+│
+│── data/
+│   │── symptom_disease.csv
+│   │── symptom_Description.csv
+│   │── symptom_precaution.csv
+│
+│── frontend/
+│   │── react-app/
+│   │   ├── public/
+│   │   ├── src/
+│   │   └── package.json
+│
+│── notebooks/
+│   │── data_exploration.ipynb
+│   │── intent_classification_svm.ipynb
+│   │── symptom_extraction_rnn.ipynb
+│
+│── tests/
+│   │── test_matcher.py
+│   │── test_api.py
+│   │── test_models.py
+│
+│── requirements.txt
+│── README.md
+│── .gitignore

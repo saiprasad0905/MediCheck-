@@ -1,0 +1,30 @@
+# ML + Data
+numpy
+pandas
+scikit-learn
+torch
+transformers
+
+# NLP
+nltk
+spacy
+
+# API / Backend (FastAPI stack)
+fastapi
+uvicorn
+python-dotenv
+
+# Utilities
+joblib
+pickle5
+tqdm
+
+# Testing
+pytest
+requests
+
+# Notebooks / Dev
+jupyter
+notebook
+matplotlib
+seaborn
